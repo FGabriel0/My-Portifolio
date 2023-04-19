@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Poppins:ital,wght@0,600;0,700;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&family=IM+Fell+Double+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Inter:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,700;1,700&display=swap');
+
+:root{
+    --color-principal: #b60d0d;
+    --color-secundaria:#ebe1e1;
+    --width-central: 100%;
+    --heigth-central:100%;
+    --font-principal:"Poppins";
+    --font-secundaria:"Hanuman";
+    --box-shadow: 0.1rem 0.1rem 1px #000;
+}
+/* ==============Resposive============ */
+@media only screen and (max-width: 414px)  {
+    .container{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    /*========== Banner=========== */
+    .banner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner h1{
+        font-size: 40px;
+        margin-top: 75%;
+        margin-right: 15%;
+        
+    }
+
+    .banner h2{
+        font-size: 25px;
+        margin-right: 15%;
+    }
+    
+    .banner button{
+        width: 150px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+/* BackGround */
+
+header{
+    width:var(--width-central);
+    height: var(--heigth-central);
+}
+.Section-1-bg{
+    background-image: url("../assets/img/BackGround.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%; 
+}
+/* .img-wrapper{
+    display: flex;
+    width: var(--width-central);
+    height: var(--heigth-central);
+    background-color: rgba(0, 0,8);
+}
+.img-wrapper img{
+    display: flex;
+    position: relative;
+    width: var(--width-central);
+    height: var(--heigth-central);
+    object-fit: cover;
+    opacity: 0.5;
+} */
+
+/* DashBoard */
+.hamburguer{
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    z-index: 100;
+    right: 32px;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.show-menu .hamburguer{
+    right: 16rem;
+}
+.line{
+    width:var(--width-central);
+    background-color: var(--color-secundaria);
+    height: 50px;
+    margin-top: 10px;
+    box-shadow:var(--box-shadow);
+}
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(209,32,27,1) 15%, rgb(141, 26, 22) 45% );
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+.sidebar.show-menu{
+    right: 0;
+}
+.menu{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.menu-item{
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.menu-item:hover{
+    background-color: var(--color-secundaria);
+    border: solid 5px var(--color-secundaria);
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+.menu-link{
+    font-family:"Baloo Da 2", serif ;
+    font-size: 2rem;
+    color: white;
+}
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: var(--width-central);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    background-color: rgba(255, 0, 0, .5);
+    color: seashell;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:background-color 1s;
+}
+.social-media i:is(:hover,:focus){
+    background-color: silver;
+}
+
+
+
+/* Banner */
+
+.banner{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    
+}
+.banner h1{
+    font-size: 70px;
+    color: var(--color-secundaria);
+    margin-top: 15px;
+    font-family:var(--font-principal);
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.banner span{
+    color: var(--color-principal);
+}
+.banner h2{
+    color: var(--color-secundaria);
+    font-size: 50px;
+    font-family:var(--font-secundaria);
+
+}
+.banner button{
+    width: 30%;
+    margin-top: 40px;
+    padding: 8px 5px;
+    font-size: 20px;
+    background-color: #FE002D;
+    border-radius: 50px;
+    color: var(--color-secundaria);
+    font-family:"Inter" ;
+    cursor: pointer;
+    transition-duration: .9s;     
+}
+    
+.banner button:is(:hover,:focus){
+    border: solid 1px #fff;
+    transition: 0.7s;
+    background: transparent;
+        
+}
+
+
+    /* Sobre */
+.C-sobre{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0px;
+    width: var(--width-central);
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 400px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585;
+}
+.Sobre-mim h1{
+
+   text-align: center;
+   font-size: 55px;
+   font-family: "Inter";
+   font-weight: bold;
+}
+.Sobre-mim h4{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "Inria Sans";
+    font-weight: bold;
+}
+.Sobre-mim span{
+    color: var(--color-principal);
+}
+.Sobre-mim p{
+    margin-top: 25px;
+    font-family: "Inria Sans";
+}
+.Sobre-mim button{
+    background-color: #FE002D;
+    margin-left: 35%;
+    margin-top: 30px;
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    transition-duration: .9s;
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--font-secundaria);
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 20px auto 60px auto;
+    padding: 20px 0;
+}
+.card-skill{
+    width: 80px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.card-skill i{
+        width: 40px;
+        margin-bottom: 5px;
+}
+@media only screen and (max-width: 414px){
+
+    .image img{
+        margin-top: 500px;
+        width: 350px;
+        height: auto;
+    }
+
+    .Sobre-mim p{
+        font-size: 12px;
+        width: 500px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Sobre-mim button{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+}
+
+
+
