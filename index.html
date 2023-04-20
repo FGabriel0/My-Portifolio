@@ -13,16 +13,27 @@
 
 <body>
     <div class="container">
-        <section class="Section-1-bg">
+        <section class="Section-1-bg" id="header">
             <header>
-                <!-- <div class="img-wrapper">
-                    <img src="./assets/img/BackGround.png" alt="banner">
-                </div> -->
-                <div class="banner">
+                <div class="banner active">
                     <h1>Eu sou <span>Fábio</span></h1>
                     <h2>Web Developer Front-End</h2>
                     <button>Sobre min <a href="#"></a></button>
                 </div>
+                <!-- <div class="banner">
+                    <h1>Tenho vários <span>Projetos</span></h1>
+                    <h2>Mostrando minha competência.</h2>
+
+                </div>
+                <div class="banner">
+                    <h1>Entre em <span>Contato</span></h1>
+                    <h2>Para temos uma conversar</h2>
+
+                </div>
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div> -->
             </header>
 
             <div class="hamburguer">
@@ -34,9 +45,9 @@
             <aside class="sidebar">
                 <div>
                     <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Sobre min</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#header" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#Sobre" class="menu-link">Sobre min</a></li>
+                        <li class="menu-item"><a href="#Projetos" class="menu-link">Projetos</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
                     </ul>
                 </div>
@@ -48,7 +59,7 @@
             </aside>
         </section>
 
-        <section class="C-sobre">
+        <section class="C-sobre" id="Sobre">
             <div class="image">
                 <img src="./assets/img/Sobre.png">
             </div><!--image-->
@@ -81,23 +92,44 @@
             </div>
         </section>
 
-        <section class="Projects-container">
-            <h1>Projetos</h1>
-            <div class="Projects">
-                <ul class="skil-project">
-                    <li class="project-list"></li>
-                    <li class="project-list"></li>
-                    <li class="project-list"></li>
-                    <li class="project-list"></li>
-                    <li class="project-list"></li>
-
-                </ul>
-            </div>
-        </section>
+        <section class="C-projetos" data-aos="fade-up">
+            <h1>Meus projetos</h1>
+            <p>Meu serviços pra você olharem eu desepenho </p>
+            <div class="img-projetos" data-aos="fade-up">
+                <img src="./assets/img/Miniblog.png" alt="projeto">
+                <img src="./assets/img/Pearson.png" alt="projeto">
+            </div><!--img-projetos-->
+            <div class="img-2"><img src="./assets/img/secret.png" alt="projeto"></div>
+        </section><!--C-projetos-->
     </div>
+    <!-- Contato -->
+    <section id="contact" class="text-image-section">
+        <h1><i class="fa-regular fa-envelope"></i>Contato</h1>
+        <div class="container-contact">
+            <div class="text">
+                <h3>Eu estou interessado em trabalhar com qulaquer empresa que pense minha habilidades
+                    <br>será útil para eles. Se você está procurando alguém como eu.<strong>por favor me</strong>
+                    <br>avise. Ou você pode apenas dizer "oi" para mim.
+                </h3>
+            </div>
+            <div class="contatos">
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Nome" />
+                        <input type="email" name="email" id="email" placeholder="E-mail" />
+                    </div>
+                    <input type="text" name="phone" id="phone" placeholder="Telefone" />
+                    <textarea name="message" id="message" placeholder="Sua mensagem..."></textarea>
+                    <input type="submit" value="Enviar" class="btn" />
+                </form>
+            </div>
+        </div>
+    </section>
 
-
-    <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>
