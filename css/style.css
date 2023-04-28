@@ -88,12 +88,51 @@ header{
 .show-menu .hamburguer{
     right: 16rem;
 }
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    color: var(--color-principal);
+    background-color: var(--color-secundaria);
+    font-family: var(--font-principal);
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid var(--color-secundaria);
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+
+}
+.show-menu .hamburguer:hover span{
+    opacity: 1;
+}
+
 .line{
     width:var(--width-central);
     background-color: var(--color-secundaria);
     height: 50px;
     margin-top: 10px;
     box-shadow:var(--box-shadow);
+    transition: transform 1s;
+}
+.show-menu #line1{
+    transform: rotate(45deg) translate(.3rem, .4rem);
+}
+.show-menu #line3{
+    transform: rotate(-44deg) translate(.4rem, -.7rem);
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
 }
 .sidebar{
     width: 20rem;
@@ -105,7 +144,7 @@ header{
     right: -20rem;
     transition: all 1s;
 }
-.sidebar.show-menu{
+.show-menu .sidebar{
     right: 0;
 }
 .menu{
@@ -203,26 +242,6 @@ header{
     background: transparent;
         
 }
-
-  .dots {
-    display: flex;
-    gap: 2rem;
-    position: absolute;
-    bottom: 3rem;
-    left: 3rem;
-  }
-  
-  .dot {
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-secundaria);
-  }
-  .banner.active {
-    opacity: 1;
-  }
-  .dot.active {
-    background-color: var(--color-principal);
-  }
 
 
     /*===========Sobre============ */
@@ -371,11 +390,9 @@ header{
 
 
 .C-projetos img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    transition-duration: 0.9s;
     border: solid 2px #180127;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 414px){
@@ -395,6 +412,8 @@ header{
        
     }
 }
+
+
 
 /* Contato */
 #contact{

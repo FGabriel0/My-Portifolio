@@ -20,35 +20,21 @@
                     <h2>Web Developer Front-End</h2>
                     <button>Sobre min <a href="#"></a></button>
                 </div>
-                <!-- <div class="banner">
-                    <h1>Tenho vários <span>Projetos</span></h1>
-                    <h2>Mostrando minha competência.</h2>
-
-                </div>
-                <div class="banner">
-                    <h1>Entre em <span>Contato</span></h1>
-                    <h2>Para temos uma conversar</h2>
-
-                </div>
-                <div class="dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div> -->
             </header>
 
             <div class="hamburguer">
                 <div class="line" id="line1"></div>
                 <div class="line" id="line2"></div>
                 <div class="line" id="line3"></div>
-
+                <span>Fechar</span>
             </div>
             <aside class="sidebar">
                 <div>
                     <ul class="menu">
                         <li class="menu-item"><a href="#header" class="menu-link">Home</a></li>
                         <li class="menu-item"><a href="#Sobre" class="menu-link">Sobre min</a></li>
-                        <li class="menu-item"><a href="#Projetos" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
+                        <li class="menu-item"><a href="#Projects" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contact" class="menu-link">Contatos</a></li>
                     </ul>
                 </div>
                 <div class="social-media">
@@ -62,7 +48,7 @@
         <section class="C-sobre" id="Sobre">
             <div class="image">
                 <img src="./assets/img/Sobre.png">
-            </div><!--image-->
+            </div>
 
             <div class="Sobre-mim">
                 <h1>Sobre mim</h1>
@@ -92,17 +78,26 @@
             </div>
         </section>
 
-        <section class="C-projetos" data-aos="fade-up">
+
+        <section class="C-projetos" id="Projects" data-aos="fade-up">
+
             <h1>Meus projetos</h1>
-            <p>Meu serviços pra você olharem eu desepenho </p>
+            <p>Click para saber mais sobre meus serviços e o repositorio do Projeto </p>
             <div class="img-projetos" data-aos="fade-up">
-                <img src="./assets/img/Miniblog.png" alt="projeto">
-                <img src="./assets/img/Pearson.png" alt="projeto">
-            </div><!--img-projetos-->
-            <div class="img-2"><img src="./assets/img/secret.png" alt="projeto"></div>
-        </section><!--C-projetos-->
+                <a href="https://github.com/FGabriel0/MiniBlog"><img id="Link1" src="./assets/img/Miniblog.png"
+                        alt="projeto"></a>
+                <a href="https://github.com/FGabriel0/Pearson-Hardman"><img id="Link2" src="./assets/img/Pearson.png"
+                        alt="projeto"></a>
+            </div>
+            <div class="img-2">
+                <a href="https://github.com/FGabriel0/SecretWord-React"><img id="Link3" src="./assets/img/secret.png" alt="projeto">
+                </a>
+            </div>
+        </section>
     </div>
-    <!-- Contato -->
+
+
+
     <section id="contact" class="text-image-section">
         <h1><i class="fa-regular fa-envelope"></i>Contato</h1>
         <div class="container-contact">
@@ -126,10 +121,8 @@
         </div>
     </section>
 
-    <script>
-        AOS.init();
-      </script>
     <script src="./js/script.js" defer></script>
+
 </body>
 
 </html>

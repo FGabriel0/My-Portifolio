@@ -1,12 +1,14 @@
-
-
 //DashBoard
 let hamburguer = document.querySelector(".hamburguer");
 
 hamburguer.addEventListener("click", () => {
   let sidebar = document
-    .querySelector(".sidebar")
+    .querySelector(".container")
     .classList.toggle("show-menu");
 });
+
+
+
+
 
 
