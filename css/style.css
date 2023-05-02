@@ -14,6 +14,14 @@
     --font-secundaria:"Hanuman";
     --box-shadow: 0.1rem 0.1rem 1px #000;
 }
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 /* ==============Resposive============ */
 @media only screen and (max-width: 414px)  {
     .container{
@@ -45,13 +53,17 @@
     }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+.reveal{
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: 1s all ease;
 }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 
 
@@ -66,7 +78,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     width: 100%; 
 }
 
@@ -135,6 +147,8 @@ header{
     visibility: hidden;
 }
 .sidebar{
+    position: fixed;
+    z-index: 99;
     width: 20rem;
     height: 100vh;
     border-radius: 10px;
@@ -379,14 +393,19 @@ header{
     border-radius: 10px;
 }
 
+.img-2 {
+    display: flex;
+    gap: 70px;
+} 
 .img-2 img{
     width: 450px;
     height: auto;
-    margin-left: 32%;
+    margin-left: 30%;
     margin-top: 35px;
+    
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
-} 
+}
 
 
 .C-projetos img:hover{
@@ -395,21 +414,31 @@ header{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 500px){
 
     
+    .img-projetos{
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
     .img-projetos img{
         width: 300px;
         height: auto;
        
     }
+    .img-2{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
     .img-2 img{
         width: 300px;
         height: auto;
-        margin-left: -28px;
-        margin-top: 50px;
-       
+        text-align: center;
+        margin-left: -10px;
     }
 }
 
@@ -422,7 +451,7 @@ header{
     justify-content: center;
 }
 #contact h1{
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 10px;
     text-align: center;
    font-size: 55px;
