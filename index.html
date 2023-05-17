@@ -13,13 +13,40 @@
 
 <body>
     <div class="container">
+
         <section class="Section-1-bg" id="header">
+            <nav class="navbar">
+                <div class="img-logo">
+                    <img src="./assets/img/android-chrome-512x512.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre-mim</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <div>
+                            <input type="checkbox" name="theme" id="change-theme">
+                            <label for="change-theme">
+                                <i class="fa-solid fa-moon"></i>
+                                <i class="fa-solid fa-sun"></i>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
             <header>
                 <div class="banner active">
-                    <h1>Eu sou <span>Fábio</span></h1>
-                    <h2>Web Developer Front-End</h2>
-                    <button>Sobre min <a href="#"></a></button>
+                    <h1 class="text-1 animation-text">Eu sou <span>Fábio</span></h1>
+                    <h2 class="text-2 animation-text">Web Developer Front-End</h2>
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
+
             </header>
 
             <div class="hamburguer">
@@ -35,12 +62,17 @@
                         <li class="menu-item"><a href="#Sobre" class="menu-link">Sobre min</a></li>
                         <li class="menu-item"><a href="#Projects" class="menu-link">Projetos</a></li>
                         <li class="menu-item"><a href="#contact" class="menu-link">Contatos</a></li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="theme" id="change-theme">
+                                <label for="change-theme">
+                                    <i class="fa-solid fa-moon"></i>
+                                    <i class="fa-solid fa-sun"></i>
+                                </label>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-                <div class="social-media">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
                 </div>
             </aside>
         </section>
@@ -65,17 +97,63 @@
                 </p>
                 <button class="btn">Saber mais</button>
 
-                <div class="tecnologia-skill">
-                    <h4>Ferramentas que Utilizo Bastante</h4>
-                    <ul class="skill">
-                        <li class="card-skill"><i class="fa-brands fa-html5"></i></li>
-                        <li class="card-skill"><i class="fa-brands fa-css3-alt"></i></li>
-                        <li class="card-skill"><i class="fa-brands fa-js"></i></li>
-                        <li class="card-skill"><i class="fa-brands fa-github"></i></li>
-                        <li class="card-skill"><i class="fa-brands fa-react"></i></li>
-                    </ul>
+        </section>
+        <section class="C-skill reveal" id="inSkills">
+            <div class="tecnologia-skill">
+                <h1>Skills</h1>
+                <div class="card-Skills">
+                    <div class="cards card-1">
+                        <img src="./assets/img/HTML5.png" alt="HTML5">
+                        <hr>
+                        <ul>
+                            <li>Html5</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+                    </div>
+                    <div class="cards card-2">
+                        <img src="./assets/img/CSS3.png" alt="CSS3">
+                        <hr>
+                        <ul>
+                            <li>CSS3</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+                    </div>
+                    <div class="cards card-3">
+                        <img src="./assets/img/JAVASCRIPT.png" alt="JAVASCRIPT">
+                        <hr>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+                    </div>
+                    <div class="cards card-4">
+                        <img src="./assets/img/TYPESCRIPT.png" alt="TYPESCRIPT">
+                        <hr>
+                        <ul>
+                            <li>TypeScript</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+                    </div>
+                    <div class="cards card-5">
+                        <img src="./assets/img/BOOTSTRAP.png" alt="BOOTSTRAP">
+                        <hr>
+                        <ul>
+                            <li>BootStrap</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+                    </div>
+                    <div class="cards card-6">
+                        <img src="./assets/img/REACT.png" alt="React">
+                        <hr>
+                        <ul>
+                            <li>React JS</li>
+                            <li>Nivel: Intermediário</li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
+
         </section>
 
 
@@ -90,9 +168,11 @@
                         alt="projeto"></a>
             </div>
             <div class="img-2">
-                <a href="https://github.com/FGabriel0/SecretWord-React"><img id="Link3" src="./assets/img/secret.png" alt="projeto">
-                <a href="https://github.com/FGabriel0/Blogr-landing-page"><img id="Link4" src="./assets/img/blogr.png" alt="projeto">
-                </a>
+                <a href="https://github.com/FGabriel0/SecretWord-React"><img id="Link3" src="./assets/img/secret.png"
+                        alt="projeto">
+                    <a href="https://github.com/FGabriel0/Blogr-landing-page"><img id="Link4"
+                            src="./assets/img/blogr.png" alt="projeto">
+                    </a>
             </div>
         </section>
     </div>
